@@ -8,8 +8,8 @@
         <x-slot name="content">
             @guest
                 <div class="flex flex-col items-center text-center px-4 py-3">
-                    <a href="#" class="uppercase text-xs tracking-widest px-5 py-2 border border-black w-full">Sign in</a>
-                    <a href="#" class="mt-3 uppercase text-xs tracking-widest px-5 py-2 border border-black bg-black text-white w-full">Register</a>
+                    <x-button-link href="{{route('login')}}" class="w-full mb-2">{{ __('Sign in') }}</x-button-link>
+                    <x-button-link href="{{route('register')}}" class="w-full bg-black text-white border-none">{{ __('Register') }}</x-button-link>
                 </div>
             @endguest
         </x-slot>

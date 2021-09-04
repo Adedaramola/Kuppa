@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Auth\LoginUserController;
+use App\Http\Controllers\Auth\RegisterUserController;
 use App\Http\Controllers\PagesController;
 use Illuminate\Support\Facades\Route;
 
@@ -13,6 +15,9 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::get('account/register', [RegisterUserController::class, 'index'])->name('register');
+Route::get('account/sign-in', [LoginUserController::class, 'index'])->name('login');
 
 Route::get('/', [PagesController::class, 'index']);
 Route::get('/products/single', [PagesController::class, 'show']);

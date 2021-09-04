@@ -26,17 +26,18 @@
                 <section class="py-4 px-3 border border-gray-300"></section>
             </div>
         </div>
-        <section class="py-5 px-4 text-sm text-gray-600">
-            <div>
+        <section class="py-5 px-4 text-sm text-gray-600 mt-6 md:flex md:items-start md:justify-between">
+            <div class="mb-4">
                 <h3 class="uppercase font-bold tracking-widest mb-1">Product code</h3>
                 <div>2003451</div>
             </div>
-            <div class="mt-4">
+            <div class="">
                 <h3 class="uppercase font-bold tracking-widest text-gray-600 mb-1">Product details</h3>
                 <div>
                     <div>Sold by <a href="#" class="underline">Xhosa Stores</a></div>
                 </div>
             </div>
+            <div></div>
         </section>
         <div class="px-4 py-8 border-t-4 border-gray-100">
             <h3 class="uppercase font-bold text-sm tracking-widest text-gray-600 mb-3">You might also like</h3>

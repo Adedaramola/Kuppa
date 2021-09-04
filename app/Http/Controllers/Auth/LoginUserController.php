@@ -13,6 +13,11 @@ class LoginUserController extends Controller
         $this->middleware('guest');
     }
 
+    public function index()
+    {
+        return view('auth.login');
+    }
+
     public function login(LoginUserRequest $request, LoginUserAction $loginUserAction)
     {
         $response = $loginUserAction->authenticate($request);

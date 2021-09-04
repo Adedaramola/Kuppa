@@ -5,14 +5,8 @@ module.exports = {
   theme: {
     extend: {
         fontFamily: {
-            'sans': ['Inter', ...defaultTheme.fontFamily.sans],
-            'serif': ['Tenor Sans',...defaultTheme.fontFamily.serif],
+            'sans': ['Inter', ...defaultTheme.fontFamily.sans]
         },
-    },
-    screens: {
-        'sm':'510px',
-        'md':'768px',
-        'lg':'1024px',
     }
   },
   variants: {

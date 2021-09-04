@@ -13,6 +13,11 @@ class RegisterUserController extends Controller
         $this->middleware('guest');
     }
 
+    public function index()
+    {
+        return view('auth.register');
+    }
+
     public function store(RegisterUserRequest $request, RegisterUserAction $registerUserAction)
     {
 

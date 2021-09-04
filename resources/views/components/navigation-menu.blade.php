@@ -7,7 +7,7 @@
                     <x-icons.menu class="text-black w-6 h-auto" />
                 </button>
                 <div class="flex-shrink-0 flex items-center">
-                    <a href="#" class="text-black text-3xl md:text-4xl tracking-tighter font-bold">
+                    <a href="/" class="text-black text-3xl md:text-4xl tracking-tighter font-bold">
                         kuppa
                     </a>
                 </div>
