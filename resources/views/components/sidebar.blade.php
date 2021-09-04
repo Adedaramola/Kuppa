@@ -18,15 +18,15 @@
         <li><a href="#" class="uppercase text-sm tracking-widest">All products</a></li>
     </ul>
     <div>
-        <div class="grid grid-cols-2 divide-x-2 text-center bg-gray-100 text-sm uppercase tracking-widest">
-            <a href="#" class="py-3 px-4">Sign in</a>
-            <a href="#" class="py-3 px-4">Join</a>
+        <div class="grid grid-cols-2 divide-x text-center bg-gray-50 text-sm uppercase tracking-widest">
+            <a href="{{route('login')}}" class="py-3 px-4">Sign in</a>
+            <a href="{{route('register')}}" class="py-3 px-4">Join</a>
         </div>
     </div>
     <ul class="mt-3" x-data="{ selected:null }">
-        <li class="relative border-b border-gray-200">
+        <li class="relative border-b border-gray-100">
             <button x-on:click="selected !== 1 ? selected = 1 : selected = null" type="button" class="w-full px-4 py-2 flex
-        justify-between items-center text-sm bg-gray-100">
+        justify-between items-center text-sm bg-gray-50">
                 <span>Help Information</span>
                 <span>
                     <x-icons.plus class="w-3 h-auto text-black" /></span>
@@ -36,13 +36,13 @@
                 <ul class="px-4 py-2 text-sm">
                     <li><a href="#" class="inline-block mb-4 hover:text-indigo-400">Help</a></li>
                     <li><a href="#" class="inline-block mb-4 hover:text-indigo-400">Track Order</a></li>
-                    <li><a href="#" class="inline-block mb-4 hover:text-indigo-400">Delivery & returns</a></li>
+                    <li><a href="#" class="inline-block hover:text-indigo-400">Delivery & returns</a></li>
                 </ul>
             </div>
         </li>
-        <li class="relative border-b border-gray-200">
+        <li class="relative border-b border-gray-100">
             <button x-on:click="selected !== 2 ? selected = 2 : selected = null" type="button" class="w-full px-4 py-2 flex
-        justify-between items-center text-sm bg-gray-100">
+        justify-between items-center text-sm bg-gray-50">
                 <span>About KUPPA</span>
                 <span>
                     <x-icons.plus class="w-3 h-auto text-black" /></span>
@@ -52,13 +52,13 @@
                 <ul class="px-4 py-2 text-sm">
                     <li><a href="#" class="inline-block mb-4 hover:text-indigo-400">About us</a></li>
                     <li><a href="#" class="inline-block mb-4 hover:text-indigo-400">Careers at KUPPA</a></li>
-                    <li><a href="#" class="inline-block mb-4 hover:text-indigo-400">Corporate responsibility</a></li>
+                    <li><a href="#" class="inline-block hover:text-indigo-400">Corporate responsibility</a></li>
                 </ul>
             </div>
         </li>
-        <li class="relative border-b border-gray-200">
+        <li class="relative border-b border-gray-100">
             <button x-on:click="selected !== 3 ? selected = 3 : selected = null" type="button" class="w-full px-4 py-2 flex
-        justify-between items-center text-sm bg-gray-100">
+        justify-between items-center text-sm bg-gray-50">
                 <span>Contact and support</span>
                 <span>
                     <x-icons.plus class="w-3 h-auto text-black" /></span>
@@ -68,7 +68,7 @@
                 <ul class="px-4 py-2 text-sm">
                     <li><a href="#" class="inline-block mb-4 hover:text-indigo-400">About us</a></li>
                     <li><a href="#" class="inline-block mb-4  hover:text-indigo-400">Careers at KUPPA</a></li>
-                    <li><a href="#" class="inline-block mb-4  hover:text-indigo-400">Corporate responsibility</a>
+                    <li><a href="#" class="inline-block  hover:text-indigo-400">Corporate responsibility</a>
                     </li>
                     <div class="mt-4 text-indigo-500">support@kuppa.com</div>
                 </ul>

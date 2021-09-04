@@ -19,7 +19,7 @@
 <body class="font-sans antialiased">
     <div x-data="{ isSidebarOpen: false }" class="min-h-screen flex flex-col">
         <x-navigation-menu />
-        <main role="main" class="flex-1 flex mt-12 md:mt-16">
+        <main role="main" class="flex-1 flex mt-14 md:mt-16">
             <x-sidebar x-show="isSidebarOpen" />
             {{ $slot }}
         </main>

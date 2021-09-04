@@ -1,6 +1,6 @@
 <nav x-data="{searchBar:false}" class="fixed w-full inset-x-0 z-10 bg-white border-b border-gray-300">
     <div class="px-4 md:px-6" x-show="!searchBar">
-        <div class="flex justify-between items-center h-12 md:h-16 lg:mx-auto lg:max-w-6xl">
+        <div class="flex justify-between items-center h-14 md:h-16 lg:mx-auto lg:max-w-6xl">
             <div class="flex items-center">
                 <!-- Hamburger -->
                 <button x-on:click="isSidebarOpen = true" class="mr-3 md:hidden">
@@ -26,7 +26,7 @@
             </div>
         </div>
     </div>
-    <div x-show="searchBar" class="px-4 h-12 md:h-16 lg:mx-auto lg:max-w-6xl">
+    <div x-show="searchBar" class="px-4 h-14 md:h-16 lg:mx-auto lg:max-w-6xl" style="display: none">
         <form action="#" method="POST" class="flex items-center h-full">
             <button type="button" x-on:click="searchBar=false">
                 <x-icons.close class="w-4 text-black" />
