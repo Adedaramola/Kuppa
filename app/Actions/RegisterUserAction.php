@@ -3,6 +3,7 @@
 namespace App\Actions;
 
 use App\Models\User;
+use App\Notifications\WelcomeUserNotification;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -20,9 +21,9 @@ class RegisterUserAction
             'password' => Hash::make($request->password),
         ]);
 
-        event(new Registered($user));
+        $user->notify(new WelcomeUserNotification($user));
 
-        if (!Auth::attempt($request->only('email','password'))) {
+        if (!Auth::attempt($request->only('email', 'password'))) {
             abort(500);
         }
     }
