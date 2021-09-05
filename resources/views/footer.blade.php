@@ -1,7 +1,7 @@
 <footer>
     <div></div>
     <div class="bg-gray-100 hidden md:block">
-        <div class="w-full lg:max-w-6xl px-5 py-10">
+        <div class="w-full mx-auto lg:max-w-6xl px-5 py-10">
             <div class="grid md:grid-cols-3 gap-5">
                 <ul class="text-xs">
                     <h5 class="uppercase text-sm font-semibold tracking-widest text-gray-500 mb-3">Help and information
