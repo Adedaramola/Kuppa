@@ -8,11 +8,6 @@ use App\Http\Requests\Auth\LoginUserRequest;
 
 class LoginUserController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('guest');
-    }
-
     public function index()
     {
         return view('auth.login');
@@ -20,8 +15,8 @@ class LoginUserController extends Controller
 
     public function login(LoginUserRequest $request, LoginUserAction $loginUserAction)
     {
-        $response = $loginUserAction->authenticate($request);
+        $loginUserAction->authenticate($request);
 
-        return $response;
+        return redirect('/');
     }
 }

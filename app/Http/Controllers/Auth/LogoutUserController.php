@@ -3,19 +3,19 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class LogoutUserController extends Controller
 {
 
-    public function __invoke(): JsonResponse
+    public function __invoke(Request $request)
     {
-        Auth::logout();
+        $this->middleware('auth');
 
-        return response()->json([
-            'message' => 'Logged out successfully'
-        ]);
+        Auth::logout();
+        $request->session()->invalidate();
+
+        return redirect('/');
     }
 }

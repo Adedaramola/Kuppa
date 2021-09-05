@@ -25,15 +25,14 @@ class RegisterUserRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|string|max:255',
+            'firstname' => 'required|string|max:255',
+            'lastname' => 'required|string|max:255',
             'email' => 'required|string|email|unique:users',
-            'phone' => 'required|string|min:11|unique:users',
             'password' => [
                 'required',
                 'string',
                 'max:255',
-                Password::min(8)
-                    ->mixedCase(),
+                Password::min(10)
             ],
         ];
     }
@@ -41,11 +40,7 @@ class RegisterUserRequest extends FormRequest
     public function messages()
     {
         return [
-            'email.required' => 'Please enter your email',
-            'email.unique' => 'Account with this email exists already',
-            'phone.min' => 'Please check the phone number',
-            'phone.unique' => 'Account with this phone number exists already',
-            'password.required' => 'Please enter your password',
+            'email.unique' => 'Account with this email exists already'
         ];
     }
 }

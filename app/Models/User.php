@@ -2,12 +2,11 @@
 
 namespace App\Models;
 
-use Tymon\JWTAuth\Contracts\JWTSubject;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
-class User extends Authenticatable implements JWTSubject
+class User extends Authenticatable
 {
     use Notifiable;
 
@@ -17,9 +16,9 @@ class User extends Authenticatable implements JWTSubject
      * @var array
      */
     protected $fillable = [
-        'name',
+        'firstname',
+        'lastname',
         'email',
-        'phone',
         'password',
     ];
 
@@ -42,28 +41,4 @@ class User extends Authenticatable implements JWTSubject
         'email_verified_at' => 'datetime',
         'shipping_details' => 'array',
     ];
-
-    public const ADMINISTRATOR = 3;
-    public const VENDOR = 2;
-    public const BASIC_USER = 1;
-
-    public function orders()
-    {
-        return $this->hasMany(Order::class);
-    }
-
-    public function reviews()
-    {
-        return $this->hasMany(Review::class);
-    }
-
-    public function getJWTIdentifier()
-    {
-        return $this->getKey();
-    }
-
-    public function getJWTCustomClaims()
-    {
-        return [];
-    }
 }

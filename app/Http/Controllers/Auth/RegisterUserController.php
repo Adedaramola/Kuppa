@@ -8,11 +8,6 @@ use App\Http\Requests\Auth\RegisterUserRequest;
 
 class RegisterUserController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('guest');
-    }
-
     public function index()
     {
         return view('auth.register');
@@ -23,8 +18,6 @@ class RegisterUserController extends Controller
 
         $registerUserAction->execute($request);
 
-        return response()->json([
-            'message' => 'Please check email for verification link'
-        ], 201);
+        return redirect('/')->with('verify', 'Please verify your email');
     }
 }
