@@ -356,7 +356,7 @@ ul {
  */
 
 html {
-  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 1 */
+  font-family: FS Meridian, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 1 */
   line-height: 1.5; /* 2 */
 }
 
@@ -22496,7 +22496,7 @@ select {
 }
 
 .font-sans {
-  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: FS Meridian, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .font-serif {
@@ -32032,27 +32032,39 @@ select {
 }
 
 @font-face {
-  font-family: 'Inter';
+  font-family: 'FS Meridian';
+
+  src: local('FS Meridian Medium'), local('FSMeridian-Medium'),
+        url(/fonts/FSMeridian-Medium.woff2?7cf13bfdc3f3777898b5914fd2d09ef8) format('woff2'),
+        url(/fonts/FSMeridian-Medium.woff?0326e337c46a2939e145bb11500ad50e) format('woff');
+
+  font-weight: 500;
 
   font-style: normal;
-
-  font-weight: 400;
-
-  src: local(''),
-        url(/fonts/inter-v3-latin-regular.woff2?351b7924dd5e53fb9e5ec938459741d2) format('woff2'),
-        url(/fonts/inter-v3-latin-regular.woff?10194357ec5e44ae17772744e97560e7) format('woff');
 }
 
 @font-face {
-  font-family: 'Inter';
+  font-family: 'FS Meridian';
+
+  src: local('FS Meridian Bold'), local('FSMeridian-Bold'),
+        url(/fonts/FSMeridian-Bold.woff2?4590c2028e0b0df4f3102a00b7c5ab82) format('woff2'),
+        url(/fonts/FSMeridian-Bold.woff?f22632637bd2faa7dcac7da0a087e822) format('woff');
+
+  font-weight: bold;
 
   font-style: normal;
+}
 
-  font-weight: 700;
+@font-face {
+  font-family: 'FS Meridian';
 
-  src: local(''),
-        url(/fonts/inter-v3-latin-700.woff2?74134d65fd573cb1629c4299feba8633) format('woff2'),
-        url(/fonts/inter-v3-latin-700.woff?9bbc3125d4caf98e62a22180e01483a3) format('woff');
+  src: local('FS Meridian Regular'), local('FSMeridian-Regular'),
+        url(/fonts/FSMeridian-Regular.woff2?187cd642c3ca16c14d1893e1eec6e00b) format('woff2'),
+        url(/fonts/FSMeridian-Regular.woff?e77ba980b83841df59d8b584713938fc) format('woff');
+
+  font-weight: normal;
+
+  font-style: normal;
 }
 
 @media (min-width: 640px) {
@@ -53759,7 +53771,7 @@ select {
   }
 
   .sm\:font-sans {
-    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: FS Meridian, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 
   .sm\:font-serif {
@@ -84986,7 +84998,7 @@ select {
   }
 
   .md\:font-sans {
-    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: FS Meridian, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 
   .md\:font-serif {
@@ -116213,7 +116225,7 @@ select {
   }
 
   .lg\:font-sans {
-    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: FS Meridian, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 
   .lg\:font-serif {
@@ -147440,7 +147452,7 @@ select {
   }
 
   .xl\:font-sans {
-    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: FS Meridian, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 
   .xl\:font-serif {
@@ -178667,7 +178679,7 @@ select {
   }
 
   .\32xl\:font-sans {
-    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: FS Meridian, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 
   .\32xl\:font-serif {

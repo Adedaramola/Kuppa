@@ -3,19 +3,28 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'Inter';
+    font-family: 'FS Meridian';
+    src: local('FS Meridian Medium'), local('FSMeridian-Medium'),
+        url('../fonts/FSMeridian-Medium.woff2') format('woff2'),
+        url('../fonts/FSMeridian-Medium.woff') format('woff');
+    font-weight: 500;
     font-style: normal;
-    font-weight: 400;
-    src: local(''),
-        url('../fonts/inter-v3-latin-regular.woff2') format('woff2'),
-        url('../fonts/inter-v3-latin-regular.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'Inter';
+    font-family: 'FS Meridian';
+    src: local('FS Meridian Bold'), local('FSMeridian-Bold'),
+        url('../fonts/FSMeridian-Bold.woff2') format('woff2'),
+        url('../fonts/FSMeridian-Bold.woff') format('woff');
+    font-weight: bold;
     font-style: normal;
-    font-weight: 700;
-    src: local(''),
-        url('../fonts/inter-v3-latin-700.woff2') format('woff2'),
-        url('../fonts/inter-v3-latin-700.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'FS Meridian';
+    src: local('FS Meridian Regular'), local('FSMeridian-Regular'),
+        url('../fonts/FSMeridian-Regular.woff2') format('woff2'),
+        url('../fonts/FSMeridian-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
