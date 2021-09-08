@@ -28,7 +28,7 @@
                     </div>
                 </form>
                 <div class="text-center mt-5">
-                    <a href="{{ route('forgot-password') }}" class="underline text-sm">Forgot password?</a>
+                    <a href="{{ route('forgot-password') }}" class="text-sm pb-1 border-b border-gray-500">Forgot password?</a>
                 </div>
                 <h3 class="text-center uppercase font-semibold tracking-widest my-10">Or sign in with</h3>
                 <div class="flex items-center justify-center mb-5">

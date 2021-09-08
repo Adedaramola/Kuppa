@@ -10,7 +10,7 @@
                 <span>Facebook</span>
             </x-button-link>
         </div>
-        <div class="mb-4 mt-5 text-center text-sm">
+        <div class="mx-auto mb-4 mt-5 text-center text-sm max-w-lg">
             Signing up with social is super quick. No extra passwords to remember - no brain fail. Don't worry, we'd
             never share any of your data or post anything on your behalf
         </div>
@@ -56,7 +56,7 @@
                             name="subscribe" id="subscribe">
                     </div>
                     <div class="mt-5 text-sm text-gray-600">By creating your account, you agree to our <a href="#"
-                            class="underline">Terms and Conditions</a> & <a href="#" class="underline">Privacy
+                            class="pb-1 border-b border-gray-500">Terms and Conditions</a> & <a href="#" class="pb-1 border-b border-gray-500">Privacy
                             Policy</a></div>
                     <div class="mt-6">
                         <button

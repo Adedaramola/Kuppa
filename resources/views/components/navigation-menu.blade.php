@@ -4,23 +4,29 @@
             <div class="flex items-center">
                 <!-- Hamburger -->
                 <button x-on:click="isSidebarOpen = true" class="mr-3 md:hidden">
-                    <x-icons.menu class="text-black w-6 h-auto" />
+                    <x-ik-hamburger class="w-7 h-7 text-black" />
                 </button>
-                <div class="flex-shrink-0 flex items-center">
-                    <a href="/" class="text-black text-3xl md:text-4xl tracking-tighter font-bold">
-                        kuppa
+                <div class="hidden flex-shrink-0 md:flex items-center">
+                    <a href="/" class="text-black text-3xl md:text-4xl font-bold uppercase">
+                        {{ config('app.name') }}
                     </a>
                 </div>
             </div>
+            <div class="flex-shrink-0 flex items-center">
+                <a href="/" class="text-black text-3xl md:text-4xl font-bold uppercase">
+                    {{ config('app.name') }}
+                </a>
+            </div>
             <div class="flex items-center">
                 <button type="button" x-on:click="searchBar=true">
-                    <x-icons.search class="w-6 text-black" />
+                    <x-ik-favourite class="w-6 h-6 text-black" />
                 </button>
                 <a href="#" class="relative flex items-center justify-center ml-6">
                     <span>
-                        <x-icons.shopping-basket class="w-6 h-auto text-black" /></span>
-                    <span
-                        class="absolute -top-2 -right-3 w-6 h-6 text-white flex items-center justify-center bg-indigo-500 text-xs rounded-full">0</span>
+                        <x-ik-bag class="w-7 h-7 text-black" />
+                    </span>
+                    {{-- <span
+                        class="absolute -top-2 -right-3 w-6 h-6 text-white flex items-center justify-center bg-indigo-500 text-xs rounded-full">0</span> --}}
                 </a>
                 @include('accounts')
             </div>

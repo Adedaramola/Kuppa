@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>{{ $title }} — {{ config('app.name','Bambuu') }}</title>
+    <title>{{ config('app.name','Bambuu') }}</title>
 
     <!-- Styles -->
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
@@ -23,7 +23,7 @@
             <x-sidebar x-show="isSidebarOpen" />
             {{ $slot }}
         </main>
-        @include('footer')
+        @include('layouts.footer')
     </div>
 
     @auth
