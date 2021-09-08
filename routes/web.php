@@ -1,10 +1,12 @@
 <?php
 
+use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Auth\ForgotPasswordController;
 use App\Http\Controllers\Auth\LoginUserController;
 use App\Http\Controllers\Auth\LogoutUserController;
 use App\Http\Controllers\Auth\RegisterUserController;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -30,9 +32,14 @@ Route::middleware(['guest'])->group(function () {
 
 Route::post('account/logout', [LogoutUserController::class, '__invoke'])->name('logout');
 
-Route::middleware(['auth'])->group(function () {
-
+Route::middleware(['auth', 'verified'])->group(function () {
 });
 
 Route::get('/', [PagesController::class, 'index']);
 Route::get('/products/single', [PagesController::class, 'show']);
+
+
+Route::name('admin.')->middleware(['admin'])->group(function () {
+    Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    Route::get('products', [ProductController::class, 'index'])->name('product');
+});
