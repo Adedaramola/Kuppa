@@ -28,11 +28,11 @@
 
     @auth
     @if (!auth()->user()->hasVerifiedEmail())
-    <div class="fixed z-10 bottom-5 inset-x-0 w-full px-4">
+    <div class="fixed z-10 bottom-3 inset-x-0 w-full px-4">
         <div class="relative flex items-center w-full mx-auto max-w-md border border-black bg-white px-4 py-3">
             <div class="text-sm">Please check <strong>{{ auth()->user()->email }}</strong> for an email verification
                 link.</div>
-            <x-button-link class="ml-4">{{ __('open') }}</x-button-link>
+            <x-button-link class="ml-4 bg-black border-none text-white">{{ __('open') }}</x-button-link>
         </div>
     </div>
     @endif

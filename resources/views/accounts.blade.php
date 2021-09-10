@@ -2,7 +2,7 @@
     <x-dropdown align="right" width="60">
         <x-slot name="trigger">
             <button type="button" class="focus:outline-none">
-                <x-icons.user class="w-6 text-black" />
+                <x-ik-user class="w-7 mt-1 text-black" />
             </button>
         </x-slot>
         <x-slot name="content">

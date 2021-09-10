@@ -6,7 +6,7 @@
                 {{-- <span class="absolute inset-y-0 right-0 w-1 bg-black" aria-hidden="true"></span> --}}
                 <a href="#"
                     class="inline-flex md:justify-center lg:justify-start items-center w-full text-sm">
-                    <x-icons.home class="w-5 h-auto text-black" />
+                    <x-ik-home class="w-5 h-auto text-black" />
                     <span class="ml-4 md:hidden lg:inline-flex">Dashboard</span>
                 </a>
             </li>
@@ -14,7 +14,7 @@
                 {{-- <span class="absolute inset-y-0 right-0 w-1 bg-black" aria-hidden="true"></span> --}}
                 <a href="#"
                     class="inline-flex md:justify-center lg:justify-start items-center w-full text-sm">
-                    <x-icons.shopping-basket class="w-5 h-auto text-black" />
+                    <x-ik-cart class="w-5 h-auto text-black" />
                     <span class="ml-4 md:hidden lg:inline-flex">Orders</span>
                 </a>
                 <span
@@ -24,7 +24,7 @@
                 {{-- <span class="absolute inset-y-0 right-0 w-1 bg-black" aria-hidden="true"></span> --}}
                 <a href="{{ route('admin.product') }}"
                     class="inline-flex md:justify-center lg:justify-start items-center w-full text-sm">
-                    <x-icons.store-front class="w-5 h-auto text-black" />
+                    <x-ik-restaurant class="w-5 h-auto text-black" />
                     <span class="ml-4 md:hidden lg:inline-flex">Products</span>
                 </a>
             </li>
@@ -32,7 +32,7 @@
                 {{-- <span class="absolute inset-y-0 right-0 w-1 bg-black" aria-hidden="true"></span> --}}
                 <a href="#"
                     class="inline-flex md:justify-center lg:justify-start items-center w-full text-sm">
-                    <x-icons.ticket class="w-5 h-auto text-black" />
+                    <x-ik-hourglass class="w-5 h-auto text-black" />
                     <span class="ml-4 md:hidden lg:inline-flex">Coupons</span>
                 </a>
             </li>
@@ -40,7 +40,7 @@
                 {{-- <span class="absolute inset-y-0 right-0 w-1 bg-black" aria-hidden="true"></span> --}}
                 <a href="#"
                     class="inline-flex md:justify-center lg:justify-start items-center w-full text-sm">
-                    <x-icons.wallet class="w-5 h-auto text-black" />
+                    <x-ik-dolar class="w-5 h-auto text-black" />
                     <span class="ml-4 md:hidden lg:inline-flex">Payment     Settings</span>
                 </a>
             </li>
@@ -48,7 +48,7 @@
                 {{-- <span class="absolute inset-y-0 right-0 w-1 bg-black" aria-hidden="true"></span> --}}
                 <a href="#"
                     class="inline-flex md:justify-center lg:justify-start items-center w-full text-sm">
-                    <x-icons.cog class="w-5 h-auto text-black" />
+                    <x-ik-controls class="w-5 h-auto text-black" />
                     <span class="ml-4 md:hidden lg:inline-flex">Store Config</span>
                 </a>
             </li>

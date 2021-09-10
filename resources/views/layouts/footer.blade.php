@@ -1,5 +1,12 @@
 <footer>
-    <div></div>
+    <div class="px-4 py-5 flex flex-col items-center text-center bg-yellow-100">
+        <h3 class="font-bold text-lg">Join our newsletter for new arrivals</h3>
+        <form action="#" class="mt-3 w-full">
+            <input type="text" class="text-center focus:ring-0 border-2 border-black block w-full" placeholder="Enter email">
+            <button type="submit" class="uppercase text-xs tracking-widest bg-black text-white px-8 py-3 mt-2">Go</button>
+        </form>
+        <div class="mt-6 mb-4 text-sm">You would receive emails on new arrivals in the store. Subscribing means you agree to our <a href="#" class="pb-1 border-b border-black">terms and conditions.</a></div>
+    </div>
     <div class="bg-gray-100 hidden md:block">
         <div class="w-full mx-auto lg:max-w-6xl px-5 py-10">
             <div class="grid md:grid-cols-3 gap-5">

@@ -1,13 +1,13 @@
 <header class="z-10 py-4 mb-8 bg-white shadow-sm">
     <nav class="container flex items-center justify-between w-full h-full mx-auto px-4">
         <button class="p-1 mr-5 -ml-1 focus:outline-none lg:hidden" aria-label="Menu">
-            <x-icons.menu class="w-6 h-auto text-black" />
+            <x-ik-hamburger class="w-6 h-auto text-black" />
         </button>
         <ul class="relative flex items-center flex-shrink-0 space-x-6">
             <x-dropdown align="right" width="48">
                 <x-slot name="trigger">
                     <button class="w-10 h-10 rounded-full flex items-center justify-center border border-black">
-                        <x-icons.user class="w-5 h-auto text-black" />
+                        <x-ik-user class="w-5 h-auto text-black" />
                     </button>
                 </x-slot>
                 <x-slot name="content">

@@ -8,7 +8,7 @@
         <div class="flex justify-between items-center py-3 border-b border-gray-100">
             <h3 class="uppercase tracking-widest text-gray-600">{{ $title }}</h3>
             <button class="focus:outline-none" x-on:click="show = false">
-                <x-icons.close class="w-6 text-black" />
+                <x-ik-close class="w-6 text-black" />
             </button>
         </div>
         {{ $slot }}
