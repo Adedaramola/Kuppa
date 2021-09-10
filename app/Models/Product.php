@@ -2,12 +2,17 @@
 
 namespace App\Models;
 
+use App\Traits\CustomId;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
+use Spatie\MediaLibrary\HasMedia;
+use Spatie\MediaLibrary\InteractsWithMedia;
+use Spatie\MediaLibrary\MediaCollections\Models\Media;
 
-class Product extends Model
+class Product extends Model implements HasMedia
 {
-    use HasFactory;
+    use HasFactory, CustomId, InteractsWithMedia;
 
 
     /**
@@ -17,13 +22,16 @@ class Product extends Model
      */
     protected $fillable = [
         'name',
-        'overview',
+        'description',
+        'price',
+        'discount',
+        'tax',
         'quantity_left',
-        'description'
     ];
 
     protected $casts = [
         'description' => 'array',
+        'product_seo' => 'array'
     ];
 
 
@@ -32,8 +40,15 @@ class Product extends Model
         return $this->belongsToMany(Category::class);
     }
 
-    public function reviews()
+    protected static function booted()
     {
-        return $this->hasMany(Review::class);
+        static::creating(function ($product) {
+            $product->slug = Str::slug($product->name);
+        });
+    }
+
+    public function registerMediaConversions(?Media $media = null): void
+    {
+        $this->addMediaConversion('thumb')->width(560)->height(672);
     }
 }

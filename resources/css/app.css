@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+.scroll-display::-webkit-scrollbar{
+    display: none;
+}
+
+.scroll-display{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
 @font-face {
     font-family: 'FS Meridian';
     src: local('FS Meridian Medium'), local('FSMeridian-Medium'),

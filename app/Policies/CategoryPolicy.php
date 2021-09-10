@@ -11,6 +11,6 @@ class CategoryPolicy
 
     public function create(User $user)
     {
-        return $user->role_id === User::ADMINISTRATOR;
+        return auth()->check() && $user->is_admin;
     }
 }

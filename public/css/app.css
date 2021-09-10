@@ -32031,6 +32031,15 @@ select {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.scroll-display::-webkit-scrollbar{
+  display: none;
+}
+
+.scroll-display{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 @font-face {
   font-family: 'FS Meridian';
 

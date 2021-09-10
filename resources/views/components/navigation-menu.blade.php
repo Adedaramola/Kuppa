@@ -12,7 +12,7 @@
                     </a>
                 </div>
             </div>
-            <div class="px-4 w-full max-w-md hidden md:block">
+            <div class="px-4 w-full max-w-sm hidden md:block">
                 <form action="#" method="POST" class="flex items-center h-full bg-gray-100 rounded-sm px-2">
                     <x-ik-search class="w-5 text-black" />
                     <input type="text" class="text-sm bg-gray-100 border-none focus:ring-0 w-full" placeholder="Search for products">

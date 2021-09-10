@@ -8,7 +8,7 @@ class PagesController extends Controller
 {
     public function index()
     {
-        return view('products.index');
+        return view('index');
     }
 
     public function show()
